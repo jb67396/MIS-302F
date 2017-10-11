@@ -1,0 +1,219 @@
+/******************** Ignore everything between here and line 21.  Not required *******************/
+@charset "UTF-8";
+/* RESET */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, font, img, ins, kbd, q, samp, small, strong, sub, sup, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, header, nav, article, aside, footer, hgroup, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	text-decoration: none;
+}
+:focus, :active { outline: 0 }
+ol, ul { list-style: none }
+header, nav, article, aside, footer, hgroup, section { display: block }
+
+/***************************** Ignore everything ABOVE.  Not required ****************************/
+
+
+
+
+
+/******************************************************************************************/
+/************************************ GENERAL FORMATTING **********************************/
+/******************************************************************************************/
+
+html {background-color: #6c7a7f ;}						/*HINT - background color of site set here*/
+
+/*h1{
+	-webkit-text-stroke: 1px #4CAF50;
+	color: white;
+	font-size: 36px;
+}*/
+.btn {
+	background-color: #b7530c;
+	color: white;
+	padding: 10px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	font-size: 16px;
+	border: 2px solid #b7530c; /* Burnt Orange */
+	/*Round the edges*/
+	border-radius: 4px;
+	cursor: pointer;
+	/*Smooth transitions*/
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+/* Button hover */
+.btn:hover{
+	background-color: white;
+	color: gray;
+}
+.dropbtn {
+	background-color: #b7530c;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+	background-color: #91430b;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown:hover .dropdown-content{
+	display: block;
+	
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	border: 1px solid #D3D3D3;
+	border-radius: 4px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.25);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+	text-decoration: underline;
+	
+}
+.header-bar {
+
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 40px;
+}
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+	font-size: 18px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 24px 32px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #b7530c;
+}
+	
+}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+/* sets text color and size for all hyperlinks on page */
+a { color: #940033;
+	font: 14px/16px Corbel, Arial, Helvetica, sans-serif;}
+
+
+
+
+
+
+/*********************************************************************************/
+/************************************ HEADER *************************************/
+/*********************************************************************************/
+header { margin: 5px 5px 2px 2px}
+
+header h1 {
+	font: 35px "Arial";
+	color: #e0d2be;							/*HINT - This is where you change webpage title color */
+    text-align: center; 
+}
+
+header h2 {
+	font: 14px/20px "Arial";
+	color: white;							/*HINT - This is where you change quote color */
+	text-align: center; 
+}
+
+
+
+
+
+
+/*********************************************************************************/
+/*********************************** BODY ****************************************/
+/*********************************************************************************/
+#content  {
+	background: white;  							/*background color in body portion*/
+	padding: 20px;   								 
+	border-radius: 15px 15px 15px 15px;				/*rounded edges*/
+	-moz-border-radius: 15px 15px 15px 15px;		/*rounded edges - FIREFOX*/
+	-webkit-border-radius: 15px 15px 15px 15px;		/*rounded edges - SAFARI & CHROME*/
+	
+}
+
+#content img { 
+	margin-left: 80px;										/* index pictures left x pixels*/
+	box-shadow: inset 1 -35px 35px -18px #005b79; 			/* shadowing for pictures*/
+	-moz-box-shadow: inset 1 1 10px rgba(50, 50, 50, 0.5);	/* shadowing for pictures - MOZILLA*/
+	-webkit-box-shadow: 3px 3px 7px #777;  					/* shadowing for pictures - CHROME*/
+	border-radius: 100%;
+}
+
+
+/* Sets the formatting for the scrolling text at the bottom*/
+#scroller {
+	font: 20px/20px "Arial";
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: black;
+}
+
+
+
+/*********************************************************************/
+/***************************** COPYRIGHT *****************************/
+/*********************************************************************/
+.copyright {
+	text-align: center;
+	color: white;							/*HINT - This is where you change copyright text color */
+	margin: 10px 0 20px;
+	clear: both;
+}
+
+
+ 
